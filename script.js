@@ -1,11 +1,11 @@
 // Mock Products Catalog with vibrant aesthetics
 const products = [
-    { id: 1, name: 'Neon Cyberpunk Hoodie', price: 79.99, category: 'Apparel', image: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80' },
-    { id: 2, name: 'RGB Mechanical Keyboard', price: 129.99, category: 'Electronics', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80' },
-    { id: 3, name: 'Sunset Gradient Sneaker', price: 95.50, category: 'Footwear', image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80' },
-    { id: 4, name: 'Aesthetic Desk Lamp', price: 45.00, category: 'Home', image: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80' },
+    { id: 1, name: 'Emerald Cyber Hoodie', price: 79.99, category: 'Apparel', image: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80' },
+    { id: 2, name: 'RGB Green Mechanical Keyboard', price: 129.99, category: 'Electronics', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80' },
+    { id: 3, name: 'Forest Gradient Sneaker', price: 95.50, category: 'Footwear', image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80' },
+    { id: 4, name: 'Aesthetic Mint Desk Lamp', price: 45.00, category: 'Home', image: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80' },
     { id: 5, name: 'Wireless Bass Earbuds', price: 59.99, category: 'Electronics', image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80' },
-    { id: 6, name: 'Minimalist Ceramic Mug', price: 22.00, category: 'Home', image: 'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=600&q=80' }
+    { id: 6, name: 'Minimalist Sage Ceramic Mug', price: 22.00, category: 'Home', image: 'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=600&q=80' }
 ];
 
 let cart = [];
@@ -26,9 +26,9 @@ function renderProducts() {
             <div class="p-5 flex flex-col flex-grow justify-between">
                 <div>
                     <h4 class="font-bold text-lg text-slate-800 mb-1">${product.name}</h4>
-                    <p class="text-fuchsia-600 font-extrabold text-xl mb-4">$${product.price.toFixed(2)}</p>
+                    <p class="text-emerald-600 font-extrabold text-xl mb-4">$${product.price.toFixed(2)}</p>
                 </div>
-                <button onclick="addToCart(${product.id})" class="w-full bg-slate-900 hover:bg-gradient-to-r hover:from-violet-600 hover:to-fuchsia-600 text-white font-medium py-2.5 rounded-xl transition shadow">
+                <button onclick="addToCart(${product.id})" class="w-full bg-slate-900 hover:bg-gradient-to-r hover:from-emerald-600 hover:to-teal-600 text-white font-medium py-2.5 rounded-xl transition shadow">
                     <i class="fa-solid fa-cart-plus mr-2"></i> Add to Cart
                 </button>
             </div>

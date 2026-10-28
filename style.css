@@ -1,43 +1,28 @@
-:root {
-  --primary-gradient: linear-gradient(135deg, #FF2E93 0%, #7928CA 50%, #4A00E0 100%);
-  --accent-glow: 0 0 20px rgba(121, 40, 202, 0.4);
-  --bg-dark: #0B0F19;
-  --card-bg: #131825;
-  --text-main: #F3F4F6;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Plus Jakarta+Sans', sans-serif;
 }
 
-/* Header & Hero Section */
-header, .hero-section {
-  background: var(--primary-gradient);
-  color: #FFFFFF;
-  box-shadow: var(--accent-glow);
+/* Custom smooth transitions for cart slide-over drawer */
+#cart-drawer {
+  transition: opacity 0.3s ease-in-out;
 }
 
-/* Modernized Add-to-Cart Buttons */
-.add-to-cart-btn {
-  background: linear-gradient(90deg, #FF2E93, #FF8A00);
-  border: none;
-  color: #FFFFFF;
-  font-weight: 600;
-  border-radius: 8px;
-  padding: 10px 16px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+/* Custom scrollbar for the shopping cart items list */
+#cart-items::-webkit-scrollbar {
+  width: 6px;
 }
 
-.add-to-cart-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(255, 46, 147, 0.4);
+#cart-items::-webkit-scrollbar-track {
+  background: #f1f5f9;
 }
 
-/* Product Cards */
-.product-card {
-  background-color: var(--card-bg);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  transition: all 0.3s ease;
+#cart-items::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
 }
 
-.product-card:hover {
-  border-color: #FF2E93;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+#cart-items::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
